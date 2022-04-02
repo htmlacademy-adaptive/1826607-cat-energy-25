@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Aleksandr Andreev](https://up.htmlacademy.ru/adaptive/25/user/1826607).
-* Наставник: `Gennady Maksimov`.
+* Наставник: [Gennady Maksimov](https://htmlacademy.ru/profile/gennadiy).
 
 ---
 
