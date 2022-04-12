@@ -9,114 +9,105 @@
     <base href="https://htmlacademy-adaptive.github.io/1826607-cat-energy-25/3/">
 </head>
   <body class="page__body">
-    <header class="page__header header__wrapper">
+    <header class="page__header page__wrapper header">
       <nav class="header__nav">
         <a class="header__logo" href="index.html">
           <img src="img/logo/cat-energy.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </a>
-        <div class="header__logo header__logo--text"></div>
         <ul class="header__nav-list nav-list">
           <li class="nav-list__item">
             <a class="nav-list__link" href="index.html">Главная</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="nav-list__link nav-list__link--active" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link nav-list__link--active" href="#nowhere">Подбор программы</a>
+            <a class="nav-list__link" href="#nowhere">Подбор программы</a>
           </li>
         </ul>
       </nav>
       <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
     </header>
     <main class="page__main">
-      <section class="promo promo--simple">
-        <h1 class="promo__title">Подбор программы</h1>
-        <p class="promo__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      </section>
-      <section class="form">
-        <h2 class="visually-hidden">Основная информация о вашем коте</h2>
-        <form class="form-order" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form-order__wrapper">
-            <div class="form-group">
-              <div class="form-group__content">
+      <section class="programm-select">
+        <h1 class="programm-select__title">Подбор программы</h1>
+        <p class="programm-select__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="programm-select__form form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__wrapper">
+              <div class="form__content">
                 <label class="form__label" for="name">Имя:<sup>*</sup></label>
                 <input class="form__input" type="text" name="cat-name" id="name" placeholder="Барсик" required>
               </div>
-              <div class="form-group__content">
+              <div class="form__content">
                 <label class="form__label" for="weight">Вес (кг):<sup>*</sup></label>
                 <input class="form__input" type="text" name="cat-weight" id="weight" placeholder="7" required>
               </div>
-              <div class="form-group__content">
+              <div class="form__content">
                 <label class="form__label" for="age">Возраст (лет):</label>
                 <input class="form__input" type="text" name="cat-age" id="age" placeholder="7">
               </div>
-            </div>
             <div class="form-group form-group--outline">
-              <div class="form-group__content">
+              <div class="form__content">
                 <input class="form__input" type="radio" name="goal-slim" id="slim" checked>
                 <label class="form__label" for="slim">Похудение</label>
               </div>
-              <div class="form-group__content">
+              <div class="form__content">
                 <input class="form__input" type="radio" name="goal-gain" id="gain">
                 <label class="form__label" for="gain">Набор массы</label>
               </div>
-              <div class="form-group__content">
+              <div class="form__content">
                 <input class="form__input" type="radio" name="goal-help" id="help">
                 <label class="form__label" for="help">Не знаю (Нужен ваш совет)</label>
               </div>
             </div>
           </fieldset>
-          <fieldset class="form-order__wrapper">
+          <fieldset class="form__wrapper">
             <h2 class="form__title">Контактные данные (владельца кота)</h2>
-            <div class="form-group">
+            <div class="form__content">
               <label class="form__label" for="email">E-mail:<sup>*</sup></label>
               <input class="form__input" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" required>
             </div>
-            <div class="form-group">
+            <div class="form__content">
               <label class="form__label" for="phone">Телефон:<sup>*</sup></label>
               <input class="form__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
             </div>
           </fieldset>
-          <fieldset class="form-order__wrapper">
+          <fieldset class="form__wrapper">
             <h2 class="form__title">Комментарий</h2>
-            <div class="form-group">
+            <div class="form__content">
               <textarea class="form__comment" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
-          <fieldset class="form-order__wrapper">
+          <fieldset class="form__wrapper">
             <h2 class="form__title">Дополнительно</h2>
-            <div class="form-group">
-              <div class="form-group__content">
+              <div class="form__content">
                 <input class="form__input" type="checkbox" name="sweetener" id="sweetener" checked>
                 <label class="form__label" for="sweetener">Сахарозаменитель</label>
               </div>
-              <div class="form-group__content">
+              <div class="form__content">
                 <input class="form__input" type="checkbox" name="water" id="water">
                 <label class="form__label" for="water">Питьевая вода</label>
               </div>
-              <div class="form-group__content">
+              <div class="form__content">
                 <input class="form__input" type="checkbox" name="milk" id="milk">
                 <label class="form__label" for="milk">Молоко</label>
               </div>
-              <div class="form-group__content">
+              <div class="form__content">
                 <input class="form__input" type="checkbox" name="vitamins" id="vitamins">
                 <label class="form__label" for="vitamins">Витамины</label>
               </div>
-            </div>
           </fieldset>
           <div class="form__footer">
-            <button class="form-order__btn btn" type="submit">Отправить заявку</button>
-            <p class="form-order__description"><sup>*</sup>— Обязательные поля</p>
+            <button class="form__btn btn" type="submit">Отправить заявку</button>
+            <p class="form__description"><sup>*</sup>— Обязательные поля</p>
           </div>
         </form>
       </section>
     </main>
     <footer class="page__footer footer">
       <div class="footer__wrapper">
-        <div class="footer-partnership partnership">
-          <div class="partnership-group">
-            <h2 class="visually-hidden">Сотрудничество с нами</h2>
+        <div class="footer__partnership partnership">
+          <div class="partnership__group">
             <p class="partnership__title">Приглашаем к сотрудничеству дилеров!</p>
             <p class="partnership__adress">ул. Большая Конюшенная, д. 19/8г<br>Санкт-Петербург</p>
           </div>
@@ -140,10 +131,7 @@
               </li>
             </ul>
           </div>
-          <div class="contacts-logo legal">
-            <p class="legal__text">HTML Academy</p>
-            <a class="legal__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Ссылка на курс HTML Academy."></a>
-          </div>
+          <a class="contacts__legal" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Ссылка на курс HTML Academy.">HTML Academy</a>
         </div>
       </div>
     </footer>
