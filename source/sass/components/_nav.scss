@@ -1,0 +1,26 @@
+.header__nav {
+    padding-top: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list__item {
+    border-top: 1px solid #E6E6E6;
+    text-align: center;
+}
+
+.nav-list__link {
+    display: block;
+    padding: 22px 24px;
+    font-family: $font-title;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}

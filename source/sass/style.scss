@@ -1,1 +1,22 @@
-// Начните писать стили здесь
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_helpers.scss';
+@import 'base/_typography.scss';
+
+@import 'layout/_page.scss';
+@import 'layout/_footer.scss';
+@import 'layout/_forms.scss';
+@import 'layout/_header.scss';
+
+@import 'components/_buttons.scss';
+@import 'components/_cards.scss';
+@import 'components/_carousel.scss';
+@import 'components/_nav.scss';
+
+@import 'content/_features.scss';
+@import 'content/_about.scss';
+@import 'content/_results.scss';
+@import 'content/_programm-select.scss';
+@import 'content/_promo.scss';
+@import 'content/_results.scss';
+@import 'content/_catalog.scss';
