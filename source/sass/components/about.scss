@@ -1,0 +1,26 @@
+.about {
+  margin-bottom: 49px;
+}
+
+.about__title {
+  @include style-reset;
+
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-font-secondary;
+  margin-bottom: 40px;
+}
+
+.about__list {
+  @include list-reset;
+}
+
+.about__item {
+  margin-bottom: 22px;
+}
+
+.about__item:last-child {
+  margin-bottom: 0;
+}

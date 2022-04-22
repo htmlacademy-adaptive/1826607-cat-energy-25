@@ -1,22 +1,14 @@
-@import 'base/_variables.scss';
-@import 'base/_mixins.scss';
-@import 'base/_helpers.scss';
-@import 'base/_typography.scss';
-
-@import 'layout/_page.scss';
-@import 'layout/_footer.scss';
-@import 'layout/_forms.scss';
-@import 'layout/_header.scss';
-
-@import 'components/_buttons.scss';
-@import 'components/_cards.scss';
-@import 'components/_carousel.scss';
-@import 'components/_nav.scss';
-
-@import 'content/_features.scss';
-@import 'content/_about.scss';
-@import 'content/_results.scss';
-@import 'content/_programm-select.scss';
-@import 'content/_promo.scss';
-@import 'content/_results.scss';
-@import 'content/_catalog.scss';
+@import "base/_variables.scss";
+@import "base/_mixins.scss";
+@import "base/_fonts.scss";
+@import "base/_global.scss";
+@import "layout/_page.scss";
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+@import "components/about.scss";
+@import "components/additional.scss";
+@import "components/btn.scss";
+@import "components/features.scss";
+@import "components/nav-list.scss";
+@import "components/promo.scss";
+@import "components/results.scss";

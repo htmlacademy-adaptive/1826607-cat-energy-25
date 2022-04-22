@@ -1,0 +1,21 @@
+.nav-list {
+  @include list-reset;
+}
+
+.nav-list__item {
+  border-top: 1px solid #e6e6e6;
+  text-align: center;
+}
+
+.nav-list__link {
+  display: block;
+  padding: 22px 24px;
+  font-family: $font-title;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-font-secondary;
+}

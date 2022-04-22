@@ -1,0 +1,22 @@
+.results {
+  font-family: $font-title;
+  background-color: $color-basic-grey;
+  padding: 25px 20px 40px 20px;
+}
+
+.results__title {
+  @include style-reset;
+
+  font-weight: 400;
+  font-family: $font-title;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-font-secondary;
+  margin-bottom: 40px;
+}
+
+.results__text {
+  @include style-reset;
+
+  margin-bottom: 20px;
+}
