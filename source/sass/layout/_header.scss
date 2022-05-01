@@ -1,3 +1,39 @@
-.header__nav {
-  padding-top: 10px;
+.nav-list {
+  @include list-reset;
+
+  .nav-list__item {
+    border-top: 1px solid $color-grey-200;
+    text-align: center;
+    &:last-child {
+      border-bottom: 1px solid $color-grey-200;
+    }
+
+    .nav-list__link {
+      display: block;
+      font-family: $font-title;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: $color-font-primary;
+      padding-top: 22px;
+      padding-bottom: 24px;
+      transition: background-color $animation-ease;
+      &:hover {
+        background-color: $color-grey-100;
+      }
+    }
+  }
+}
+
+.header__toggle {
+  display: block;
+  width: 24px;
+  height: 18px;
+  background-image: url("../img/icons/ic-menu-toggle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

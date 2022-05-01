@@ -1,25 +1,38 @@
 .promo {
+  background-color: rgba(104, 183, 56, 0.85);
+  color: $color-white;
   margin-bottom: 20px;
   font-family: $font-title;
-}
+  text-align: center;
+  padding-top: 27px;
 
-.promo__title {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-}
+  .promo__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
 
-.promo__subtitle {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
-}
+  .promo__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 29px;
+  }
 
-.promo__btn {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  text-decoration: none;
+  .promo__btn {
+    display: block;
+    background-color: $color-green;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-white;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
 }

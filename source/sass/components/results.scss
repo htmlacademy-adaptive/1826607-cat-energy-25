@@ -1,22 +1,21 @@
 .results {
-  font-family: $font-title;
   background-color: $color-grey-100;
   padding: 25px 20px 40px 20px;
-}
 
-.results__title {
-  @include style-reset;
+  .results__title {
+    @include style-reset;
 
-  font-weight: 400;
-  font-family: $font-title;
-  font-size: 36px;
-  line-height: 40px;
-  color: $color-font-secondary;
-  margin-bottom: 40px;
-}
+    font-weight: 400;
+    font-family: $font-title;
+    font-size: 36px;
+    line-height: 40px;
+    color: $color-font-primary;
+    margin-bottom: 40px;
+  }
 
-.results__text {
-  @include style-reset;
+  .results__text {
+    @include style-reset;
 
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+  }
 }
