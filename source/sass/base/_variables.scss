@@ -1,16 +1,20 @@
-$color-basic-green: #68b738;
-$color-basic-grey: #f2f2f2;
-$color-special-grey: #cdcdcd;
-$color-status-error: #ff8282;
+$color-white: #ffffff;
+$color-green: #68b738;
+$color-grey-100: #f2f2f2;
+$color-grey-200: #cdcdcd;
+$color-grey-300: #666666;
+$color-grey-400: #222222;
 
-$color-font-primary: #444444;
-$color-font-secondary: #000000;
+$color-font-primary: #000000;
+$color-font-secondary: #444444;
 
-$font-body: "Arial", "Open Sans", "Helvetica Neue", sans-serif;
-$font-title: "Oswald", "Open Sans", "Helvetica Neue", sans-serif;
+$font-title: "Oswald";
+$font-body: "Arial";
+$font-alternative: "Open Sans", "Helvetica Neue", sans-serif;
 
-$padding-mobile: 20px;
-$min-width: 320px;
+$body-padding-mobile: 20px;
+$body-min-width: 320px;
+
 $tablet-width: 768px;
 $desktop-width: 1260px;
-$max-width: 1440px;
+// $max-width: 1440px;

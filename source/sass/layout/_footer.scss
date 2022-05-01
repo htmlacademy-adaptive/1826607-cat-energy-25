@@ -1,9 +1,9 @@
 .page__footer {
-  background-color: $color-basic-grey;
+  background-color: $color-grey-100;
 }
 
 .partnership__group {
-  background-color: #ffffff;
+  background-color: $color-white;
   display: flex;
   align-items: center;
 }
@@ -15,7 +15,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $color-font-primary;
 }
 
 .contacts__logo {
@@ -30,8 +30,8 @@
   padding: 22px 0 22px 0;
   display: flex;
   justify-content: space-evenly;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid $color-grey-200;
+  border-bottom: 1px solid $color-grey-200;
 }
 
 .partnership__map {
