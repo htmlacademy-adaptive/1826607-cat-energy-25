@@ -1,0 +1,121 @@
+.form {
+
+  .form__block {
+    @include style-reset;
+
+    border: none;
+
+    .form__comment {
+      width: 100%;
+      border: 1px solid $color-grey-200;
+      margin-bottom: 22px;
+      text-transform: uppercase;
+      padding: 9px 12px 9px 15px;
+
+      &::placeholder {
+        font-family: $font-title;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+
+    .form__title {
+      font-family: $font-title;
+      color: $color-font-primary;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 35px;
+    }
+
+    .form__field-list {
+      @include style-reset;
+
+      list-style: none;
+      margin-bottom: 24px;
+    }
+  }
+
+  .option-list {
+    @include style-reset;
+
+    list-style: none;
+    border-top: 1px solid $color-grey-200;
+    border-bottom: 1px solid $color-grey-200;
+    padding-top: 22px;
+    padding-bottom: 19px;
+    margin-bottom: 26px;
+
+    .option-list__item {
+      margin-bottom: 13px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+
+      .option__input {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .option__label {
+    font-family: $font-title;
+    color: $color-font-primary;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  .field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+
+    .field__label {
+      font-family: $font-title;
+      color: $color-font-secondary;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      text-transform: uppercase;
+      margin-right: 12px;
+    }
+
+    .field__input {
+      display: block;
+      width: 100%;
+      border: 1px solid $color-grey-200;
+      padding: 13px 15px;
+
+      &::placeholder {
+        font-family: $font-title;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .form__footer {
+
+    .form__btn {
+      font-family: $font-title;
+      font-size: 16px;
+      line-height: 20px;
+      background-color: $color-green;
+      color: $color-white;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}

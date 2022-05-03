@@ -1,0 +1,37 @@
+.loading-card {
+  text-align: center;
+  padding-top: 78px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $color-grey-100;
+  background-image: url("../img/icons/ic-plus.svg");
+  background-repeat: no-repeat;
+  background-position: center 25px;
+
+  .loading-card__title {
+    font-family: $font-title;
+    color: $color-font-primary;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .loading-card__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 21px;
+  }
+
+  .loading-card__btn {
+    font-family: $font-title;
+    color: $color-font-secondary;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

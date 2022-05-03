@@ -9,6 +9,14 @@
   list-style: none;
 }
 
+@mixin page-title {
+  font-family: $font-title;
+  color: $color-font-primary;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
 @mixin visually-hidden {
   position: absolute;
   width: 1px;
