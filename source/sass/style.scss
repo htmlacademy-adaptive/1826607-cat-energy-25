@@ -2,7 +2,6 @@
 @import "base/_mixins.scss";
 @import "base/_fonts.scss";
 @import "base/_global.scss";
-@import "layout/_page.scss";
 @import "layout/_header.scss";
 @import "layout/_footer.scss";
 @import "components/nav-list.scss";
@@ -17,5 +16,6 @@
 @import "components/results.scss";
 @import "components/parameters.scss";
 @import "components/slider.scss";
+@import "components/controls.scss";
 @import "components/programm-select.scss";
 @import "components/form.scss";

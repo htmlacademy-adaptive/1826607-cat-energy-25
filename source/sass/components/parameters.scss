@@ -1,4 +1,5 @@
 .parameters {
+  margin-bottom: 15px;
 
   .parameters__list {
     @include style-reset;
@@ -29,6 +30,12 @@
         margin: 0;
       }
     }
+  }
+
+  .parameters__weight, .parameters__price {
+    font-family: $font-body;
+    color: $color-font-secondary;
+    margin: 0;
   }
 
   .parameters__price {

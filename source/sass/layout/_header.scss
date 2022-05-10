@@ -1,6 +1,13 @@
 .header {
   border-bottom: 1px solid $color-grey-200;
-  margin-bottom: 27px;
+
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+  }
 
   .header__toggle {
     display: block;
@@ -12,5 +19,91 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+  }
+
+  .header__logo-tablet {
+    display: none;
+  }
+}
+
+.header__logo-desktop {
+  display: none;
+}
+
+.header__logo-tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+
+  .header {
+    border-bottom: none;
+
+    .header__nav {
+      padding: 0 30px 0;
+
+      .nav-list {
+        position: static;
+        align-items: center;
+        width: 500px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        .nav-list__item {
+          border-top: none;
+
+          .nav-list__link {
+            font-size: 18px;
+            line-height: 24px;
+            padding-right: 16px;
+            padding-left: 16px;
+          }
+        }
+      }
+
+      .header__logo {
+        display: none;
+      }
+
+      .header__logo-tablet {
+        display: block;
+      }
+
+      .header__toggle {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .header {
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 720px;
+      height: 694px;
+      right: 0;
+      z-index: -1;
+      background: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/promo-background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .header__nav {
+      padding: 53px 110px 0;
+
+      .header__logo-tablet {
+        display: none;
+      }
+
+      .header__logo-desktop {
+        display: block;
+      }
+    }
   }
 }

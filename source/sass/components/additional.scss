@@ -69,16 +69,4 @@
       margin-bottom: 43px;
     }
   }
-
-  .parameters {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-
-    .parameters__weight, .parameters__price {
-      font-family: $font-body;
-      color: $color-font-secondary;
-      margin: 0;
-    }
-  }
 }
