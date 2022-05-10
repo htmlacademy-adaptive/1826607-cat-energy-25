@@ -7,7 +7,7 @@
   margin-bottom: 20px;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 100%;
@@ -104,8 +104,8 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .promo {
+    height: 694px;
 
     .promo__content {
       display: flex;

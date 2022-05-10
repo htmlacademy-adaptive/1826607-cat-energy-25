@@ -13,23 +13,25 @@
   }
 
   .features__item--slim::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 8%;
-    background-image: url("../../img/feature-slim.svg");
+    background-image: url("../../img/feature-slim.png");
     background-repeat: no-repeat;
+    background-size: contain;
     width: 50px;
     height: 53px;
   }
 
   .features__item--gain::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 8%;
-    background-image: url("../../img/feature-gain.svg");
+    background-image: url("../../img/feature-gain.png");
     background-repeat: no-repeat;
+    background-size: contain;
     width: 67px;
     height: 50px;
   }
@@ -69,8 +71,9 @@
     border-top: 1px solid $color-grey-200;
     padding-top: 19px;
     padding-bottom: 22px;
+
     &::after {
-      content: '';
+      content: "";
       width: 24px;
       height: 12px;
       background-image: url("../../img/icons/ic-arrow-right.svg");
@@ -82,7 +85,6 @@
 
 @media (min-width: $tablet-width) {
   .features {
-
     .features__list {
       margin-bottom: 45px;
     }
@@ -90,11 +92,6 @@
     .features__item {
       padding: 77px 60px 57px 52px;
       margin-bottom: 30px;
-    }
-
-    .features__item--slim::before,
-    .features__item--gain::before {
-      display: none;
     }
 
     .features__title {
@@ -115,11 +112,32 @@
       font-size: 20px;
       line-height: 30px;
     }
+
+    .features__item--slim::before {
+      content: "";
+      width: 200px;
+      height: 200px;
+      top: 25%;
+      right: 5%;
+      background-image: url("../../img/feature-slim.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .features__item--gain::before {
+      content: "";
+      width: 230px;
+      height: 230px;
+      top: 25%;
+      right: 5%;
+      background-image: url("../../img/feature-gain.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-
   .features {
     margin-bottom: 71px;
 
@@ -132,6 +150,38 @@
     .features__item {
       margin-bottom: 0;
       min-width: 500px;
+    }
+
+    .features__title {
+      margin-left: 35%;
+    }
+
+    .features__item--slim::before {
+      content: "";
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+      background-image: url("../../img/feature-slim.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .features__item--gain::before {
+      content: "";
+      width: 130px;
+      height: 130px;
+      top: 47px;
+      left: 32px;
+      background-image: url("../../img/feature-gain.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .features__btn {
+    &::after {
+      top: 28px;
     }
   }
 }

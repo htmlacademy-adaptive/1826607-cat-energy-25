@@ -19,3 +19,20 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .results {
+    background-color: $color-white;
+    padding: 0 30px 61px;
+
+    .results__title {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 63px;
+    }
+
+    .results__text {
+      margin-bottom: 54px;
+    }
+  }
+}

@@ -34,4 +34,43 @@
     margin-left: 6px;
     cursor: pointer;
   }
+
+  .controls__bar {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .controls {
+    .controls__bar {
+      display: block;
+      width: 426px;
+
+      .controls__slider-range {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .controls__toggle {
+      display: none;
+    }
+
+    .controls__label {
+      font-size: 20px;
+      line-height: 30px;
+
+      &:first-child {
+        margin-right: 23px;
+      }
+
+      &:last-child {
+        margin-left: 23px;
+      }
+    }
+
+    .controls__range {
+      display: none;
+    }
+  }
 }

@@ -35,7 +35,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .header {
     border-bottom: none;
 
@@ -78,11 +77,9 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .header {
-
     &::before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 720px;

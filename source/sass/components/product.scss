@@ -13,7 +13,7 @@
     margin-left: 36px;
   }
 
-  .product__table{
+  .product__table {
     @include list-reset;
 
     width: 142px;
@@ -23,7 +23,8 @@
       justify-content: space-between;
       margin-bottom: 4px;
 
-      .product__td, .product__th {
+      .product__td,
+      .product__th {
         margin: 0;
       }
     }
