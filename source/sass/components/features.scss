@@ -1,43 +1,187 @@
 .features {
   margin-bottom: 20px;
+
+  .features__list {
+    @include list-reset;
+  }
+
+  .features__item {
+    background-color: $color-grey-100;
+    padding: 30px 20px 0 20px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .features__item--slim::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8%;
+    background-image: url("../../img/feature-slim.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 53px;
+  }
+
+  .features__item--gain::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8%;
+    background-image: url("../../img/feature-gain.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 67px;
+    height: 50px;
+  }
+
+  .features__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .features__title {
+    font-family: $font-title;
+    color: $color-font-primary;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 29px;
+    margin-left: 71px;
+  }
+
+  .features__text {
+    color: $color-font-secondary;
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
+
+  .features__btn {
+    display: block;
+    position: relative;
+    font-family: $font-title;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $color-font-secondary;
+    text-decoration: none;
+    border-top: 1px solid $color-grey-200;
+    padding-top: 19px;
+    padding-bottom: 22px;
+
+    &::after {
+      content: "";
+      width: 24px;
+      height: 12px;
+      background-image: url("../../img/icons/ic-arrow-right.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+  }
 }
 
-.features__list {
-  @include list-reset;
+@media (min-width: $tablet-width) {
+  .features {
+    .features__list {
+      margin-bottom: 45px;
+    }
+
+    .features__item {
+      padding: 77px 60px 57px 52px;
+      margin-bottom: 30px;
+    }
+
+    .features__title {
+      font-size: 36px;
+      line-height: 36px;
+      margin-left: 0;
+    }
+
+    .features__text {
+      width: 340px;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 52px;
+    }
+
+    .features__btn {
+      border-top: none;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .features__item--slim::before {
+      content: "";
+      width: 200px;
+      height: 200px;
+      top: 25%;
+      right: 5%;
+      background-image: url("../../img/feature-slim.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .features__item--gain::before {
+      content: "";
+      width: 230px;
+      height: 230px;
+      top: 25%;
+      right: 5%;
+      background-image: url("../../img/feature-gain.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
 }
 
-.features__item {
-  background-color: $color-basic-grey;
-  padding: 30px 20px 23px 20px;
-  margin-bottom: 20px;
-}
+@media (min-width: $desktop-width) {
+  .features {
+    margin-bottom: 71px;
 
-.features__item:last-child {
-  margin-bottom: 0;
-}
+    .features__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-.features__title {
-  font-family: $font-title;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  color: $color-font-secondary;
-  margin-top: 0;
-  margin-bottom: 29px;
-}
+    .features__item {
+      margin-bottom: 0;
+      min-width: 500px;
+    }
 
-.features__text {
-  margin-top: 0;
-  margin-bottom: 23px;
-}
+    .features__title {
+      margin-left: 35%;
+    }
 
-.features__btn {
-  font-family: $font-title;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: $color-font-secondary;
-  text-decoration: none;
+    .features__item--slim::before {
+      content: "";
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+      background-image: url("../../img/feature-slim.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .features__item--gain::before {
+      content: "";
+      width: 130px;
+      height: 130px;
+      top: 47px;
+      left: 32px;
+      background-image: url("../../img/feature-gain.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .features__btn {
+    &::after {
+      top: 28px;
+    }
+  }
 }

@@ -1,22 +1,38 @@
 .results {
-  font-family: $font-title;
-  background-color: $color-basic-grey;
+  background-color: $color-grey-100;
   padding: 25px 20px 40px 20px;
+
+  .results__title {
+    @include style-reset;
+
+    font-weight: 400;
+    font-family: $font-title;
+    font-size: 36px;
+    line-height: 40px;
+    color: $color-font-primary;
+    margin-bottom: 40px;
+  }
+
+  .results__text {
+    @include style-reset;
+
+    margin-bottom: 20px;
+  }
 }
 
-.results__title {
-  @include style-reset;
+@media (min-width: $tablet-width) {
+  .results {
+    background-color: $color-white;
+    padding: 0 30px 61px;
 
-  font-weight: 400;
-  font-family: $font-title;
-  font-size: 36px;
-  line-height: 40px;
-  color: $color-font-secondary;
-  margin-bottom: 40px;
-}
+    .results__title {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 63px;
+    }
 
-.results__text {
-  @include style-reset;
-
-  margin-bottom: 20px;
+    .results__text {
+      margin-bottom: 54px;
+    }
+  }
 }

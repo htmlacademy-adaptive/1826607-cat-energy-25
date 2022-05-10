@@ -7,23 +7,44 @@
 img {
   height: auto;
   max-width: 100%;
-}
-
-.visually-hidden {
-  @include visually-hidden;
+  object-fit: cover;
 }
 
 body {
-  font-family: $font-body;
+  font-family: $font-body, $font-alternative;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
   line-height: 18px;
-  min-width: $min-width;
+  min-width: $body-min-width;
   color: $color-font-secondary;
   margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.page {
+  height: 100%;
+}
+
+.page__wrapper {
+  padding: 0 $body-padding-mobile 0;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .page__wrapper {
+    padding: 0 $body-padding-tablet 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__wrapper {
+    padding: 0 $body-padding-desktop 0;
+  }
 }
